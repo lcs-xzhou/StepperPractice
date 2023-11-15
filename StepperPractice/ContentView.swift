@@ -44,7 +44,6 @@ struct ContentView: View {
                 Text("\(sum)")
                     .font(.system(size: 60))
             }
-            
             Spacer()
         }
         .padding()
@@ -52,5 +51,32 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    
+    TabView(selection: Binding.constant(4)) {
+        
+        ContentView()
+            .tabItem {
+                Image(systemName: "plus")
+                Text("Plus")
+            }
+        
+        Text("Minus")
+            .tabItem {
+                Image(systemName: "minus")
+                Text("Minus")
+            }
+        
+        Text("Multiply")
+            .tabItem {
+                Image(systemName: "multiply")
+                Text("Multiply")
+            }
+        
+        Text("Divide")
+            .tabItem {
+                Image(systemName: "divide")
+                Text("Divide")
+            }
+        
+    }
 }
