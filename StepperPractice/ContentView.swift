@@ -33,6 +33,7 @@ struct ContentView: View {
             HStack(alignment: .top) {
                 Image(systemName: "plus")
                     .font(.system(size: 44))
+                    .padding()
                 Spacer()
                 Text("\(base2)")
                     .font(.system(size: 60))
@@ -60,23 +61,24 @@ struct ContentView: View {
                 Text("Plus")
             }
         
-        Text("Minus")
+        DifferenceView()
             .tabItem {
                 Image(systemName: "minus")
                 Text("Minus")
             }
         
-        Text("Multiply")
+        ProductView()
             .tabItem {
                 Image(systemName: "multiply")
                 Text("Multiply")
             }
         
-        Text("Divide")
+        QuotientsView()
             .tabItem {
                 Image(systemName: "divide")
                 Text("Divide")
             }
         
     }
+    .accentColor(.purple)
 }
