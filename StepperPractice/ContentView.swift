@@ -33,7 +33,7 @@ struct ContentView: View {
             HStack(alignment: .top) {
                 Image(systemName: "plus")
                     .font(.system(size: 44))
-                    .padding()
+                    .padding(.vertical)
                 Spacer()
                 Text("\(base2)")
                     .font(.system(size: 60))

@@ -33,7 +33,7 @@ struct QuotientsView: View {
             HStack(alignment: .top) {
                 Image(systemName: "divide")
                     .font(.system(size: 44))
-                    .padding()
+                    .padding(.vertical)
                 Spacer()
                 Text("\(base8)")
                     .font(.system(size: 60))

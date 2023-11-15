@@ -33,7 +33,7 @@ struct ProductView: View {
             HStack(alignment: .top) {
                 Image(systemName: "multiply")
                     .font(.system(size: 44))
-                    .padding()
+                    .padding(.vertical)
                 Spacer()
                 Text("\(base6)")
                     .font(.system(size: 60))

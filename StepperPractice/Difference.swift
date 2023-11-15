@@ -33,7 +33,7 @@ struct DifferenceView: View {
             HStack(alignment: .top) {
                 Image(systemName: "minus")
                     .font(.system(size: 44))
-                    .padding()
+                    .padding(.vertical)
                 Spacer()
                 Text("\(base4)")
                     .font(.system(size: 60))
